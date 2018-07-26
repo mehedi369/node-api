@@ -1,0 +1,9 @@
+<link rel ="stylesheet" href="w3.css">
+<div class="w3-container w3-card-4 w3-red">
+  <h1 class=" w3-center">Welcome to the result page</h1>
+</div>
+<ul class="w3-ul w3-border w3-card w3-center w3-hoverable">
+  <% data["Search"].forEach((movie)=>{ %>
+    <li><strong><%= movie["Title"]%></strong> - <%= movie["Year"] %></li>
+  <%}); %>
+</ul>
